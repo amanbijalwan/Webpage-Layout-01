@@ -1,5 +1,6 @@
 body{
     margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .zone {
@@ -23,6 +24,12 @@ body{
 
 
 /* NAV BAR */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .main-nav{
     display: flex;
@@ -51,13 +58,48 @@ a{
     margin-left: auto;
 }
 
+
 /* COVER */
 
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 65vh;
+}
+
+.cover{
+    width: 25rem;
+}
+
+/* GRID */
+
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.box > img{
+    width: 100%;
+}
+
+.box{
+    background-color: #555;
+    padding: 100px;
+    margin: 15px;
+}
+
+footer{
+    text-align: center;
+}
+
+.box:hover {
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
 }
 
 
